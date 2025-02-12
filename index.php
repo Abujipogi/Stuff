@@ -94,15 +94,6 @@
     transform: scale(1.3); /* Zoom effect on hover */
 }
 
-.map-container {
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-    background: linear-gradient(135deg, rgba(214, 146, 228, 0.9), rgba(152, 194, 235, 0.9));
-    padding: 15px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
 
     </style>
 </head>
@@ -119,7 +110,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav me-auto">
-      <li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link" href="index.php">Home</a>
         </li>
         <li class="nav-item">
@@ -142,12 +133,58 @@
     <h2 class="slogan">Welcome to Elysse Stuff's -Where Every Petal Tells a Story.</h2>
 </div>
 
-<!-- Google Map Section -->
-<div class="container text-center mt-4">
-    <h3 class="mb-3">Visit our store at the location below:</h3>
-    
-    <div class="map-container">
-        <img src="img/map.png" alt="Map Location" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+<!-- Slideshow -->
+<div id="carouselExampleIndicators" class="carousel slide mt-3" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/img1.jpg" class="d-block w-100 img-fluid" alt="Slide 1">
+    </div>
+    <div class="carousel-item">
+      <img src="img/img2.jpg" class="d-block w-100 img-fluid" alt="Slide 2">
+    </div>
+    <div class="carousel-item">
+      <img src="img/img3.jpg" class="d-block w-100 img-fluid" alt="Slide 3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="container text-center mt-5 contact-container">
+    <h3 class="mb-3">Contact Us</h3>
+    <p>Order or inquire through the links below:</p>
+
+    <div class="d-flex justify-content-center gap-4">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/profile.php?id=61558679676218" target="_blank">
+            <i class="bi bi-facebook gradient-icon"></i>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/Elysse_Stuff's" target="_blank">
+        <i class="bi bi-instagram gradient-icon" ></i>
+        </a>
+
+        <!-- Gmail -->
+        <a href="mailto:gamefugaku@gmail.com">
+            <i class="bi bi-envelope-fill gradient-icon"></i>
+        </a>
+
     </div>
 </div>
 
+
+
+
+
+</body>
+</html>
